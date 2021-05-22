@@ -80,7 +80,7 @@ public abstract class BeanFactoryUtils {
 	 */
 	public static String transformedBeanName(String name) {
 		Assert.notNull(name, "'name' must not be null");
-		// 条件成立, 说明getBean传入的name, 不是&开头的, 直接返回
+		// 条件成立：说明getBean传入的name, 不是&开头的, 直接返回
 		if (!name.startsWith(BeanFactory.FACTORY_BEAN_PREFIX)) {
 			return name;
 		}
